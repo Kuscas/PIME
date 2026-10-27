@@ -1,12 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIME TESTES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria Muditā</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> TESTE </h1>
-    <h2> eu dou o bumbum </h2>
+  <div class="outer-frame">
+    <main class="page">
+      <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Galeria Muditā - início">
+          <img src="https://c.animaapp.com/CbiBX35S1yLJVq-0P4l9Tw/img/logo.png" alt="Logo Galeria Muditā"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <span class="logo-fallback">M</span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+          <a href="#inicio">Galeria Mudita</a>
+          <a href="#templo-tzong-kwan">Templo Tzong Kwan</a>
+          <a href="#meditacao">Meditação</a>
+        </nav>
+      </header>
+
+      <section class="feature intro" id="inicio">
+        <div class="image-wrap">
+          <img src="https://c.animaapp.com/CbiBX35S1yLJVq-0P4l9Tw/img/galeria-mudita-photo.png"
+               alt="Pessoas reunidas na Galeria Muditā"
+               onerror="this.onerror=null; this.src='https://c.animaapp.com/CbiBX35S1yLJVq-0P4l9Tw/img/meditacao-photo.png';">
+        </div>
+
+        <div class="copy intro-copy">
+          <h1>Bem-vindos(as) à<br>Galeria Mudita</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Culpa dolor eos animi pariatur esse accusamus accusamus. Deserunt eiusmod ut lorem commodo et ut cupidatat magna. Velit id adipiscing esse elit quis reprehenderit quis.</p>
+          <a class="button" href="#templo-tzong-kwan">Conheça mais</a>
+        </div>
+      </section>
+
+      <section class="feature temple" id="templo-tzong-kwan">
+        <div class="copy">
+          <h2>Templo<br>Tzong Kwan</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Culpa dolor eos animi pariatur esse accusamus accusamus. Deserunt eiusmod ut lorem commodo et ut cupidatat magna. Velit id adipiscing esse elit quis reprehenderit quis.</p>
+          <a class="button" href="https://tzongkwan.org" target="_blank" rel="noopener noreferrer">Conheça mais</a>
+        </div>
+
+        <div class="image-wrap">
+          <img src="https://c.animaapp.com/CbiBX35S1yLJVq-0P4l9Tw/img/templo-tzong-kwan-photo.png"
+               alt="Fachada do Templo Tzong Kwan">
+        </div>
+      </section>
+
+      <section class="feature meditation" id="meditacao">
+        <div class="image-wrap">
+          <img src="https://c.animaapp.com/CbiBX35S1yLJVq-0P4l9Tw/img/meditacao-photo.png"
+               alt="Espaço de meditação">
+        </div>
+
+        <div class="copy">
+          <h2>Meditação</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor eos animi pariatur esse accusamus accusamus. Deserunt eiusmod ut lorem commodo et ut cupidatat magna. Velit id adipiscing esse elit quis reprehenderit quis.</p>
+          <a class="button" href="meditacoes-videos.html">Conheça mais</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,228 @@
+
+/* ============================
+   PÁGINA DE MEDITAÇÕES
+============================ */
+
+.meditation-page {
+  min-height: 100vh;
+}
+
+/* IMAGEM DO TOPO */
+
+.meditation-hero {
+  padding: 30px 0 55px;
+}
+
+.meditation-banner {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 35vw, 430px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+/* INTRODUÇÃO */
+
+.meditation-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 38px 20px 0;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gold, #a77b12);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.meditation-intro h1 {
+  margin: 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.meditation-intro p {
+  max-width: 650px;
+  margin: 20px auto 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+/* SEÇÃO DE VÍDEOS */
+
+.videos-section {
+  padding: 45px 0 65px;
+  border-top: 1px solid var(--line, #ded5c6);
+}
+
+.videos-heading {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.videos-heading h2 {
+  margin: 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(42px, 5vw, 58px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.videos-heading p {
+  max-width: 620px;
+  margin: 14px auto 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+/* GRADE */
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 38px 28px;
+}
+
+/* CARTÕES */
+
+.video-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line, #ded5c6);
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #2b2925;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-info {
+  position: relative;
+  padding: 22px 24px 25px;
+}
+
+.video-number {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--wine, #800b0b);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.video-info h3 {
+  margin: 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.video-info p {
+  margin: 10px 0 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* RODAPÉ */
+
+.meditation-footer {
+  padding: 32px 20px 45px;
+  border-top: 1px solid var(--line, #ded5c6);
+  text-align: center;
+}
+
+.meditation-footer p {
+  margin: 0;
+  color: var(--ink, #393829);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.meditation-footer .button {
+  margin: 20px auto 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+  .meditation-hero {
+    padding-top: 20px;
+    padding-bottom: 38px;
+  }
+
+  .meditation-banner {
+    height: 250px;
+  }
+
+  .meditation-intro {
+    padding: 28px 5px 0;
+  }
+
+  .meditation-intro h1 {
+    font-size: clamp(42px, 10vw, 56px);
+  }
+
+  .meditation-intro p {
+    font-size: 18px;
+  }
+
+  .videos-section {
+    padding: 35px 0 45px;
+  }
+
+  .videos-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .videos-heading h2 {
+    font-size: 44px;
+  }
+
+  .videos-heading p {
+    font-size: 18px;
+  }
+
+  .video-info {
+    padding: 18px 20px 22px;
+  }
+
+  .video-info h3 {
+    font-size: 29px;
+  }
+
+  .meditation-footer p {
+    font-size: 18px;
+  }
+}
